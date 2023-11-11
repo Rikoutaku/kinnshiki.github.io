@@ -1,0 +1,307 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* cursor: url('./static/5/hand.png') auto; */
+    /* cursor: url(./static/8/小洋葱图标.png); */
+}
+
+div{
+    overflow: hidden;
+}
+
+.show {
+    display: block;
+}
+
+.hide{
+    display: none !important;
+}
+
+.page{
+    background-color: #000;
+}
+
+.page, .page-open, .page-main{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.page-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-open .my-progress{
+    width: 600px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page-main .bg-lz{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('./static/2/（动）背景粒子.png');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: transform 0.2s ease-in-out;  
+}
+
+.page-main .bg-sd{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-position: center center; */
+    background: url('./static/2/洋葱后面背景装饰的丝带.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-main .bg-yc{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('./static/2/洋葱.png');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-main .bg-xr{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('./static/2/（动）小人.png');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-main .bg-lh{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('./static/7/裂痕背景（2.png');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.word1, .word2, .word3{
+    /* display: none; */
+    color: #fff;
+    font-size: 30px;
+}
+.word1 span:nth-child(1){
+    position: absolute;
+    left: 50px;
+    top: 250px;
+}
+.word1 span:nth-child(2){
+    position: absolute;
+    right: 50px;
+    bottom: 250px;
+}
+.word1 span:nth-child(3){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #9a9797;
+}
+.word2 span:nth-child(1){
+    position: absolute;
+    left: 80px;
+    top: 250px;
+    width: 290px;
+}
+.word3 span:nth-child(1){
+    position: absolute;
+    right: 50px;
+    bottom: 250px;
+}
+.gif{
+    z-index: 1111111;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 11111;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.gif img{
+    margin: 0 30px;
+}
+
+.gif img:nth-child(1), .gif img:nth-child(3) {
+    cursor: pointer;
+}
+
+/* 小球 */
+.xiaoqiu{
+    position: absolute;
+    width: 200px;
+    right: 150px;
+    top: 125px;
+    cursor: pointer;
+}
+
+.video{
+    position: absolute;
+    top: 230px;
+    left: 560px;
+}
+.hand{
+    position: absolute;
+    top: 230px;
+    left: 700px;
+    width: 200px;
+    height: 300px;
+    cursor: url(./static/5/Frame30.cur), auto;
+}
+
+.video2{
+    position: absolute;
+    z-index: 1111;
+
+}
+.bornbaby{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 11111;
+}
+
+.hudie{
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+    cursor: pointer;
+    z-index: 1111111;
+}
+
+
+/* 最后一章 */
+.page-end{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.bg-light{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('./static/8/渐变背景.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bg-couple{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('./static/8/Frame29.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translateY(200px) scale(2);
+    transition: transform 2s ease-in-out;  
+}
+
+.word4{
+    color: #000;
+    font-size: 30px;
+}
+.word4 span:nth-child(1){
+    position: absolute;
+    left: 50px;
+    top: 400px;
+}
+.word4 span:nth-child(2){
+    position: absolute;
+    right: 100px;
+    bottom: 285px;
+}
+.xyc{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    cursor: pointer;
+    z-index: 1111111;
+}
+
+.page-hx{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 120px;
+}
+
+
+.page-hx img:not(:nth-child(4), :nth-child(5)){
+    width: calc(100% - 240px);
+}
+
+/* .page-hx img:not(:nth-child(5)){ */
+    /* width: calc(100% - 240px); */
+/* } */
+
+.page-hx .back{
+    position: absolute;
+    bottom: 55px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1111111;
+    width: 100px;
+}
+
+.page-hx .home{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1111111;
+    width: 100px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .gif , .bornbaby, .hudie{
+        transform: scale(0.7);
+    }
+
+    .xiaoqiu{
+        position: absolute;
+        width: 150px;
+        right: -34px;
+        top: 28px;
+        cursor: pointer;
+    }
+
+    .hand{
+        top: 158px;
+        left: 300px;
+    }
+
+    .word1, .word2, .word3, .word4{
+        font-size: 24px;
+    }
+
+    .video{
+        position: absolute;
+        top: 161px;
+        left: 155px;
+    }
+}
+
